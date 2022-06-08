@@ -18,5 +18,5 @@
 // const name = promt(message: "Как тебя зовут")
 
 // const age = alert()
-// const arr3 = [[[[[[[[[[[[[[[5]]]]]]]]]]]]]],
-// console.log(arr3[0])
+const arr3 = [[[[[[[[[[[[[[[5]]]]]]]]]]]]]]]
+    console.log(arr3 [14][0])
