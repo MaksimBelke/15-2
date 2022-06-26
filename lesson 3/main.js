@@ -34,8 +34,10 @@
 // numbers(number.number1,number.number2)
 
 const input = document.getElementById("input")
+//getElementsByClassName
+//getElementById
 const  button = document.getElementById("button")
 button.onclick = function (){
-    console.log(input.value)
+    console.log(input.value);
 }
 
