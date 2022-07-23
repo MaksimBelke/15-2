@@ -13,12 +13,11 @@ innCheck[0].addEventListener("click", () => {
  });
 const block = document.querySelector('.block')
  let num = 0;
- let field = "";
  const count = () => {
-   num++;
+   num += 40;
    block.style.left = num + 'px'
    console.log(num);
-   if (num < 360) {
+   if (num < 40) {
       count();
    }
  };
