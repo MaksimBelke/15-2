@@ -1,41 +1,57 @@
 
 import './App.css';
+//
+// function User (props) {
+//   return (
+//     <ul>
+//       <li>name: {props.name}</li>
+//       <li>lastName:{props.lastName}</li>
+//       <li>age: {props.age}</li>
+//     </ul>
+//   );
+// }
+//
+// function Product (props) {
+//   return(
+//     <ul>
+//       <li>name:{props.name}</li>
+//       <li>price: {props.price}</li>
+//     </ul>
+//   );
+// }
+//
+//
+// function Title(props) {
+// console.log(props.title)
+//   return (
+//     <h1>Some title</h1>
+//   )
+// }
+// function MainPage () {
+//   return (
+//     <>
+//       <Title title="Hello World"/>
+//       <p>lorem lorem lorem</p>
+//       <User name= "Maksim" lastName="Belke" age="29"/>
+//       <Product name ="Telephone" price= "15000Com"/>
+//       <Product name = "Notebook" price= "40000Com"/>
+//       <Product name = "Book" price= "1000Com"/>
+//     </>
+//   );
+// }
 
-function Header () {
+import MainPage from "./pages/mainPage/MainPage";
+import AboutPages from "./pages/aboutPages/AboutPages";
 
-  return(
- <>
- <Title/>
-    <ul>
-      <li>Main page</li>
-      <li>About page</li>
-      <li>Contact page</li>
-    </ul></>
-  );
-}
-
-function Content () {
-
-  return (
-  <>
-  <Title/>
-    <p>lorem lorem lorem</p>
-  </>
-  );
-}
-
-function Title () {
-
-  return (
-    <h1>Some title</h1>
-  )
-}
 
 function App() {
+  const info = {
+    title: "I am title",
+    body: "Lorem inpsum bla bla bla"
+  }
   return (
     <div className="App">
-      <Header/>
-      <Content/>
+      <AboutPages info={info}/>
     </div>
   );
 }
